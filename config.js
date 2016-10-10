@@ -1,4 +1,4 @@
 window.GoogleSamples = window.GoogleSamples || {};
 window.GoogleSamples.Config = window.GoogleSamples.Config || {
-  gcmAPIKey: 'AIzaSyCy2wKrSkICdMVQjirfdugkganfGU940So'
+  gcmAPIKey: 'AIzaSyCqStFL6hMU1Hb7VAP_Nh1cWL5dhOX5i7E'
 };
