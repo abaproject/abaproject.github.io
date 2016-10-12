@@ -7,10 +7,6 @@ var GCM_ENDPOINT = 'https://android.googleapis.com/gcm/send';
 var curlCommandDiv = document.querySelector('.js-curl-command');
 var isPushEnabled = false;
 
-window.PushNotificationSource = {
-	title: 'Your notification'
-};
-
 // This method handles the removal of subscriptionId
 // in Chrome 44 by concatenating the subscription Id
 // to the subscription endpoint
