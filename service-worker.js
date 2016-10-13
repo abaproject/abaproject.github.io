@@ -3,8 +3,8 @@
 self.addEventListener('push', function(event) {
   console.log('Received a push message', event);
 
-  var title = 'Yay a message.';
-  var body = 'We have received a push message.';
+  var title = 'Branch network extends to four new locations';
+  var body = 'ABA Bank extended its branch network to four...';
   var icon = '/images/icon-192x192.png';
   var tag = 'simple-push-demo-notification-tag';
 
@@ -12,7 +12,10 @@ self.addEventListener('push', function(event) {
     self.registration.showNotification(title, {
       body: body,
       icon: icon,
-      tag: tag
+      tag: tag,
+      data: {
+        url: data.notification.url
+      } 
     })
   );
 });
@@ -35,7 +38,7 @@ self.addEventListener('notificationclick', function(event) {
       }
     }
     if (clients.openWindow) {
-      return clients.openWindow('https://www.google.com.kh');
+      return clients.openWindow('https://www.ababank.com/news-media/news/');
     }
   }));
 });

@@ -1,9 +1,8 @@
 	<?php 
-	private function sendGcmNotify($reg_ids, $message)
+	function sendGcmNotify($reg_ids, $message)
 	{
 		$fields = array(
-			'registration_ids'  => $reg_ids,
-			'data' => array( "message" => $message ),
+			'registration_ids'  => $reg_ids
 		);
 		
 		$headers = array(
@@ -26,7 +25,6 @@
 		curl_close($ch);
 	}
 	
-	$this->sendGcmNotify(
-		'fyV3H2ngsjc:APA91bFnQowrdhwxVwhqdgTSFZw21p0oW4UyLO6uJ9YS72hc47MqYyQqOEhLuOr2W-aj6iBgBD55McQJv8dtM764lYUp8J5M82Rm4_qYpPHfMFKyieV5-YV0xyG5zuKVVmbO_HDG476W',
+	sendGcmNotify(	'fyV3H2ngsjc:APA91bFnQowrdhwxVwhqdgTSFZw21p0oW4UyLO6uJ9YS72hc47MqYyQqOEhLuOr2W-aj6iBgBD55McQJv8dtM764lYUp8J5M82Rm4_qYpPHfMFKyieV5-YV0xyG5zuKVVmbO_HDG476W',
 		'Test for message'
 	);
