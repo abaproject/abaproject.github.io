@@ -1,51 +1,21 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <meta name="description" content="Sample illustrating the use of Push Messaing and Notifications.">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Push Messaging &amp; Notifications</title>
-
-    <!-- Add to homescreen for Chrome on Android -->
-    <meta name="mobile-web-app-capable" content="yes">
-    <link rel="icon" sizes="192x192" href="../images/touch/chrome-touch-icon-192x192.png">
-
-    <!-- Add to homescreen for Safari on iOS -->
-    <meta name="apple-mobile-web-app-title" content="Push Messaging and Notifications Sample">
-
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <link rel="apple-touch-icon-precomposed" href="../images/apple-touch-icon-precomposed.png">
-
-    <!-- Tile icon for Win8 (144x144 + tile color) -->
-    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
-    <meta name="msapplication-TileColor" content="#3372DF">
-
-    <link rel="icon" href="../images/favicon.ico">
-    <!-- Include manifest file in the page -->
-    <link rel="manifest" href="manifest.json">
-
-  </head>
-
-  <body>
-    <h1>Push Messaging &amp; Notifications</h1>
-
-    
-        <button class="js-push-button" disabled>
-          Enable Push Messages
-        </button>
-    </p>
-
-    <h2>cURL Command to Send Push</h2>
-    <div class="js-curl-command"></div>
-
-    <script src="config.js"></script>
-    <script src="demo.js"></script>
-    <script src="main.js"></script>
-    
-  </body>
+<html>
+	<head>
+		<script type="text/javascript">
+    (function(p,u,s,h){
+        p._pcq=p._pcq||[];
+        p._pcq.push(['_currentTime',Date.now()]);
+        s=u.createElement('script');
+        s.type='text/javascript';
+        s.async=true;
+        s.src='https://cdn.pushcrew.com/js/394252435d2d9b584dab9f4fab90da5e.js';
+        h=u.getElementsByTagName('script')[0];
+        h.parentNode.insertBefore(s,h);
+    })(window,document);
+</script>
+	</head>
+	<body>
+		<button onclick="_pcq.push(['triggerOptIn',{httpWindowOnly: true}]);">
+GET NOTIFICATIONS
+</button>
+	</body>
 </html>
